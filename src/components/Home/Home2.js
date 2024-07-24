@@ -4,27 +4,20 @@ import {Fade, Slide} from "react-awesome-reveal";
 import myImg from "../../Assets/Myavatar.png";
 import {AiFillGithub, AiFillInstagram, AiOutlineMail} from "react-icons/ai";
 import {FaLinkedinIn} from "react-icons/fa";
+import "./Home2.css"; // Import your custom CSS
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8} className="home-about-description">
-            <Fade
-              direction="left"
-              duration={2000} // Duration in milliseconds
-              delay={500} // Delay before animation starts
-            >
+            <Fade direction="left" duration={1000} delay={300}>
               <h1 style={{fontSize: "2.6em"}}>
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
             </Fade>
-            <Fade
-              direction="left"
-              duration={2000} // Duration in milliseconds
-              delay={500} // Delay before animation starts
-            >
+            <Fade direction="left" duration={1000} delay={300}>
               <p className="home-about-body">
                 I fell in love with programming and have developed a strong
                 passion for it.
@@ -57,17 +50,8 @@ function Home2() {
             </Fade>
           </Col>
           <Col md={4} className="myAvtar">
-            <Slide
-              direction="right"
-              duration={2000} // Duration in milliseconds
-              delay={500} // Delay before animation starts
-            >
-              <img
-                src={myImg}
-                className="img-fluid"
-                alt="avatar"
-                style={{borderRadius: "50%"}}
-              />
+            <Slide direction="right" duration={2000} delay={500}>
+              <img src={myImg} className="img-fluid avatar-img" alt="avatar" />
             </Slide>
           </Col>
         </Row>
@@ -100,7 +84,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/aashi_ashfak/tagged/?next=%2F"
+                  href="https://www.instagram.com/aashi_ashfak"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

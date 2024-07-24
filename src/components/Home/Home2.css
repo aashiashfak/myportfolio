@@ -1,0 +1,50 @@
+.home-about-section {
+  padding: 100px 0;
+}
+
+.home-about-description {
+  margin-bottom: 50px;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px; /* Adjust this value as needed */
+}
+
+.home-about-social {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-about-social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-about-social-links .social-icons {
+  display: inline-block;
+}
+
+.home-social-icons {
+  color: #6c757d;
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .home-about-description {
+    text-align: center;
+  }
+
+  .myAvtar {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .avatar-img {
+    max-width: 200px; /* Adjust for smaller screens */
+  }
+}

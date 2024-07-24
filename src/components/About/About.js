@@ -21,7 +21,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <Fade direction="left" duration={2000} delay={500}>
+            <Fade direction="left" duration={1000} delay={300}>
               <h1 style={{fontSize: "2.1em", paddingBottom: "20px"}}>
                 Know Who <strong className="purple">I'M</strong>
               </h1>
@@ -33,18 +33,18 @@ function About() {
             style={{paddingTop: "120px", paddingBottom: "50px"}}
             className="about-img"
           >
-            <Slide direction="right" duration={2000} delay={500}>
+            <Slide direction="right" duration={1000} delay={300}>
               <img src={laptopImg} alt="about" className="img-fluid" />
             </Slide>
           </Col>
         </Row>
-        <Fade direction="up" duration={2000} delay={500}>
+        <Fade direction="up" duration={1000} delay={300}>
           <h1 className="project-heading">
             Professional <strong className="purple">Skillset </strong>
           </h1>
           <Techstack />
         </Fade>
-        <Fade direction="up" duration={2000} delay={500}>
+        <Fade direction="down" duration={1000} delay={300}>
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
