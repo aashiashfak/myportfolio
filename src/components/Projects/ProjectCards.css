@@ -1,15 +1,15 @@
-.project-card-view {
+.project-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
-.project-card-view .card-body {
+.project-card-content {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-.project-card-view .card-body .mt-auto {
-  margin-top: auto;
+.project-card-footer {
+  margin-top: auto; /* Push the footer to the bottom */
 }

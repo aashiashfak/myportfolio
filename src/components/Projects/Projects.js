@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import emotion from "../../Assets/Projects/emotion.png";
 import Evento from "../../Assets/Projects/Evento.png";
 import MovieApp from "../../Assets/Projects/MovieApp.png";
 import Qrcode from "../../Assets/Projects/Qrcode.png";
 import KanbanApp from "../../Assets/Projects/kanbanApp.png";
 import SeminiarHall from "../../Assets/Projects/SeminarHall.png";
+
 
 
 function Projects() {
