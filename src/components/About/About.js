@@ -33,9 +33,7 @@ function About() {
             style={{paddingTop: "120px", paddingBottom: "50px"}}
             className="about-img"
           >
-            <Slide direction="right" duration={1000} delay={300}>
-              <img src={laptopImg} alt="about" className="img-fluid" />
-            </Slide>
+            <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <Fade direction="up" duration={1000} delay={300}>
