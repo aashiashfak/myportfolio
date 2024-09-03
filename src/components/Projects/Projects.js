@@ -29,6 +29,7 @@ function Projects() {
               title="Evento"
               description={`• Evento is an event booking platform designed to cater to three distinct user roles:Admin, Vendor, and User. The platform provides a comprehensive solution forevent management and ticket booking \n• Developed with Django for the backend and React.js for the frontend.`}
               ghLink="https://github.com/aashiashfak/django_restframework_project_evento"
+              demoLink="https://evento.ink"
             />
           </Col>
 
