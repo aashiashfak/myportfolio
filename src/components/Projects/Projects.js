@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import Evento from "../../Assets/Projects/Evento.png";
 import MovieApp from "../../Assets/Projects/MovieApp.png";
 import Qrcode from "../../Assets/Projects/Qrcode.png";
-import KanbanApp from "../../Assets/Projects/kanbanApp";
+import KanbanApp from "../../Assets/Projects/kanbanApp.png";
 import SeminiarHall from "../../Assets/Projects/SeminarHall.png";
 
 

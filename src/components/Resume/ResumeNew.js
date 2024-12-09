@@ -2,14 +2,15 @@ import React, {useState, useEffect} from "react";
 import {Container, Row} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Mohammed Ashfak T.pdf";
 import {AiOutlineDownload} from "react-icons/ai";
-import {Document, Page, pdfjs} from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+
+  // Replace <FILE_ID> with your Google Drive file ID
+  const fileID = "1Lr9kHQT1Y7Cj0AyR8we-0sEGXxcG5tXu";
+  const drivePreviewLink = `https://drive.google.com/file/d/${fileID}/preview`;
+  const driveDownloadLink = `https://drive.google.com/uc?export=download&id=${fileID}`;
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -20,7 +21,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{justifyContent: "center", position: "relative"}}>
-          <a href={pdf} download="Mohammed_Ashfak_T.pdf">
+          <a href={driveDownloadLink} target="_blank" rel="noopener noreferrer">
             <Button variant="primary" style={{maxWidth: "250px"}}>
               <AiOutlineDownload />
               &nbsp;Download CV
@@ -29,13 +30,20 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+          <iframe
+            src={drivePreviewLink}
+            style={{
+              width: width > 786 ? "80%" : "100%",
+              height: "700px",
+              border: "none",
+            }}
+            title="Resume Preview"
+            allow="autoplay"
+          />
         </Row>
 
         <Row style={{justifyContent: "center", position: "relative"}}>
-          <a href={pdf} download="Mohammed_Ashfak_T.pdf">
+          <a href={driveDownloadLink} target="_blank" rel="noopener noreferrer">
             <Button variant="primary" style={{maxWidth: "250px"}}>
               <AiOutlineDownload />
               &nbsp;Download CV
