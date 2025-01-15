@@ -37,8 +37,13 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex" style={{width:"100px"}}>
-          <img src={logo} className="img-fluid " alt="brand" style={{width:"100%"}}/>
+        <Navbar.Brand href="/" className="d-flex" style={{width: "100px"}}>
+          <img
+            src={logo}
+            className="img-fluid "
+            alt="brand"
+            style={{width: "100%"}}
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,7 +59,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{marginBottom: "2px"}} /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -64,7 +69,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{marginBottom: "2px"}} /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -74,23 +79,21 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen style={{marginBottom: "2px"}} />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
+                href="https://drive.google.com/file/d/1wDav0WcLTC66g91SBn2qlVedXbMYDaTI/view?usp=sharing"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{marginBottom: "2px"}} /> Resume
               </Nav.Link>
             </Nav.Item>
-
 
             <Nav.Item className="fork-btn">
               <Button
@@ -98,8 +101,8 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{fontSize: "1.2em"}} />{" "}
+                <AiFillStar style={{fontSize: "1.1em"}} />
               </Button>
             </Nav.Item>
           </Nav>
